@@ -22,9 +22,17 @@
       background-color: #3498db;
       color: white;
       border: none;
-      padding: 8px 12px;
+      padding: 8px 14px;
       border-radius: 4px;
       cursor: pointer;
+    }
+    .message {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #dff0d8;
+      color: #3c763d;
+      border-radius: 5px;
+      display: none;
     }
   </style>
 </head>
@@ -37,19 +45,35 @@
   <h3>Java Developer</h3>
   <p><strong>Company:</strong> Infosys</p>
   <p><strong>Location:</strong> Pune</p>
-  <button>Apply</button>
+  <button onclick="applyJob('Java Developer')">Apply</button>
 </div>
 
 <div class="job-card">
   <h3>Frontend Developer</h3>
   <p><strong>Company:</strong> TCS</p>
   <p><strong>Location:</strong> Mumbai</p>
-  <button>Apply</button>
+  <button onclick="applyJob('Frontend Developer')">Apply</button>
 </div>
+
+<div id="successMessage" class="message"></div>
 
 <p style="margin-top:30px; color:gray;">
   *This is a frontend demo. Backend APIs are implemented using Spring Boot.*
 </p>
+
+<script>
+  function applyJob(jobTitle) {
+    var name = prompt("Enter your name:");
+    var email = prompt("Enter your email:");
+
+    if (name && email) {
+      document.getElementById("successMessage").style.display = "block";
+      document.getElementById("successMessage").innerText =
+        "Application submitted successfully for " + jobTitle +
+        " by " + name + " (" + email + ")";
+    }
+  }
+</script>
 
 </body>
 </html>
