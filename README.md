@@ -13,4 +13,16 @@ A simple full-stack Job Portal application using Spring Boot and React.
 - React.js
 - MySQL
 
-This project is created for learning full-stack development.
+## ▶️ How to Run Locally
+
+### Backend
+1. Create MySQL database named `jobportal`
+2. Update database credentials in `application.properties`
+3. Run Spring Boot application
+
+### Frontend
+1. Install Node.js
+2. Navigate to frontend folder
+3. Run `npm install`
+4. Run `npm start`
+
