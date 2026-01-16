@@ -12,6 +12,14 @@ A simple full-stack Job Portal application using Spring Boot and React.
 - Java, Spring Boot
 - React.js
 - MySQL
+- 
+## 🌐 Live Demo
+
+Frontend Demo (GitHub Pages):  
+https://renuka24-rp.github.io/smart-job-portal/
+
+Note: Backend APIs are implemented using Spring Boot and documented in this repository.
+
 
 ## ▶️ How to Run Locally
 
